@@ -1,0 +1,29 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="Catalog.CatalogZF.controller.View1" displayBlock="true">
+	<App xmlns="sap.m" id="idAppControl">
+		<pages>
+			<Page title="Landingpage" id="landingpage">
+				<content>
+					<sap.m:HBox xmlns:sap.m="sap.m" class="sapUiLargeMarginEnd" id="HBoxSeite1" width="100%" alignItems="Center" displayInline="true" backgroundDesign="Solid" justifyContent="SpaceAround">
+						<sap.m:items>
+							<sap.m:Image class="ZFLogo" height="200px" width="250px" src="Images/ZF-Logo.svg" mode="Background"/>
+							<sap.m:Label class="Navigation" id="UX_Portal" width="100%" text="UX Portal" busyIndicatorSize="Auto" textAlign="Left"/>
+							<Link xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" class="Navigation" id="HowItWorks" text="How It Works" press="action" textAlign="End" textDirection="LTR" action:wiring="\{'press':\{'navigation':\{'routeName':'HowItWorks'\}\}\}"/>
+							<Link xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" class="Navigation" id="Features" text="Features" press="action"  textAlign="Begin" action:wiring="\{'press':\{'navigation':\{'routeName':'Features'\}\}\}"/>
+							<Link xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" class="Navigation" id="Contact" text="Contact" press="action"  action:wiring="\{'press':\{'navigation':\{'routeName':'Contact'\}\}\}"/>
+							<Link xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" class="Navigation" id="About" text="About" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'TestForItems'\}\}\}"/>
+						</sap.m:items>
+					</sap.m:HBox>
+					<sap.m:VBox xmlns:sap.m="sap.m" id="HBox2" height="79.5%" width="100%" alignItems="Start" backgroundDesign="Solid" renderType="Bare" direction="Column">
+						<sap.m:items>
+							<Text class="Styleguide" text="SAP UI5 Test Application"/>
+							<Text class="Information" text="This Application will be deloyed with Jenkins"/>
+							<sap.m:Image class="Illustration" height="500px" width="1200px" src="Images/Illustration.svg"/>
+							<Button xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" class="Elements" width="15em" text="Elements" press="action" icon="sap-icon://inspection" action:wiring="\{'press':\{'navigation':\{'routeName':'TESTforPage'\}\}\}"/>
+							<Text class="JohannesSchwegler" text="by Johannes Schwegler"/>
+						</sap.m:items>
+					</sap.m:VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

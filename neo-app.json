@@ -1,0 +1,40 @@
+{
+	"welcomeFile": "/webapp/index.html",
+	"routes": [{
+			"path": "/themedesigner",
+			"target": {
+				"type": "application",
+				"name": "themedesigner"
+			},
+			"description": "Route for theme designer"
+		},
+
+		{
+			"path": "/catalogzf2",
+			"target": {
+				"type": "application",
+				"name": "theme1"
+			},
+			"description": "Route for theme"
+		},
+
+		{
+			"path": "/resources",
+			"target": {
+				"type": "service",
+				"name": "sapui5",
+				"entryPath": "/resources"
+			},
+			"description": "SAPUI5 Resources"
+		}, {
+			"path": "/test-resources",
+			"target": {
+				"type": "service",
+				"name": "sapui5",
+				"entryPath": "/test-resources"
+			},
+			"description": "SAPUI5 Test Resources"
+		}
+	],
+	"sendWelcomeFileRedirect": true
+}

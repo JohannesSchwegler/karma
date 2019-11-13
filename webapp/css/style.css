@@ -1,0 +1,77 @@
+#Landingpage {
+    Opacity: 100;
+}
+
+
+/* Enter your custom styles here */
+
+.Navigation {
+    font-size: 1.5vw;
+    font-family: 'Montserrat';
+}
+
+#HBox2 {
+    width: 100%;
+}
+
+#Elements {
+    border-radius: 150px;
+    color: #1179bf;
+    padding-left: 1vw;
+}
+
+#Header1 {
+    font-size: 2vw;
+    font-family: 'ZF Prometo';
+}
+
+#button1 {
+    margin-top: 2vw;
+    margin-left: 5vw;
+}
+
+.ZFLogo {
+
+}
+
+.Styleguide {
+    font-size: 3vw;
+    color: #000;
+    font-family: 'Montserrat';
+    position: absolute;
+    padding-top:2vw;
+    padding-left: 14vw;
+}
+
+.Illustration {
+    position: absolute;
+    margin-left: 37vw;
+}
+
+.Information {
+    font-size: 1.2vw;
+    color: #1179bf;
+    font-family: 'Montserrat';
+    
+    position: absolute;
+    width: 37em;
+    padding-left: 14vw;
+    padding-top: 7vw;
+}
+
+.Elements {
+    position: absolute;
+    margin-left: 13vw;
+    top: 70%;
+    border-radius: 36px;
+}
+
+.JohannesSchwegler {
+    position: absolute;
+    left:85%;
+    top: 93%;
+    color: #1179bf;
+    font-family: 'Montserrat';
+    font-weight:bolder;
+    
+}

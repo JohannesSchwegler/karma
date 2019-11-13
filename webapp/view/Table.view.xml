@@ -1,0 +1,60 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m">
+	<HBox width="100%" alignItems="Start" justifyContent="Center">
+		<items>
+			<Table  noDataText="Drop column list items here and columns in the area above">
+				<items>
+					<ColumnListItem  type="Active" vAlign="Middle">
+						<cells>
+							<CheckBox id="box231" text="Check Box" selected="false"/>
+							<Text id="text31" text="Text"/>
+							<Text id="text41" text="Text"/>
+							<Text id="text51" text="Text"/></cells>
+					</ColumnListItem>
+					<ColumnListItem  type="Active" vAlign="Middle">
+						<cells>
+							<CheckBox id="box12" text="Check Box" selected="false"/>
+							<Text id="text32" text="Text"/>
+							<Text id="text42" text="Text"/>
+							<Text id="text52" text="Text"/></cells>
+					</ColumnListItem>
+					<ColumnListItem  type="Active" vAlign="Middle">
+						<cells>
+							<CheckBox id="box13" text="Check Box" selected="false"/>
+							<Text id="text33" text="Text"/>
+							<Text id="text43" text="Text"/>
+							<Text id="text53" text="Text"/></cells>
+					</ColumnListItem>
+					<ColumnListItem  type="Active" vAlign="Middle">
+						<cells>
+							<CheckBox id="box14" text="Check Box" selected="false"/>
+							<Text id="text34" text="Text"/>
+							<Text id="text44" text="Text"/>
+							<Text id="text54" text="Text"/></cells>
+					</ColumnListItem>
+				</items>
+				<columns>
+					<Column >
+						<header>
+							<Label id="label0" text="Column Header"/>
+						</header>
+					</Column>
+					<Column id="column12">
+						<header>
+							<Label id="label1" text="Column Header"/>
+						</header>
+					</Column>
+					<Column id="column21">
+						<header>
+							<Label id="label2" text="Read-Only Column"/>
+						</header>
+					</Column>
+					<Column id="column13">
+						<header>
+							<Label id="label4" text="Required Column"/>
+						</header>
+					</Column>
+				</columns>
+			</Table>
+		</items>
+	</HBox>
+</mvc:View>

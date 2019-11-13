@@ -1,0 +1,11 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" controllerName="Catalog.CatalogZF.controller.Features" xmlns:html="http://www.w3.org/1999/xhtml">
+	<App xmlns="sap.m">
+		<pages>
+			<Page title="Go Back to the Landing Page">
+				<content>
+				    <Button id="button0" text="Features" press="action" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'View1'\}\}\}" />
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

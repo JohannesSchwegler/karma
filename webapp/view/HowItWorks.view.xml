@@ -1,0 +1,18 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="Catalog.CatalogZF.controller.HowItWorks" xmlns:core="sap.ui.core">
+	<App xmlns="sap.m">
+		<pages>
+			<Page title="Title">
+				<content>
+					<HBox id="hbox0" justifyContent="Center" alignItems="Center" width="100%" direction="Column">
+						<items>
+							<Button id="button0" text="BackToLandingPage" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" action:wiring="\{'press':\{'navigation':\{'routeName':'View1'\}\}\}" press="action" />
+							<Text id="text3" text="It`s pretty simple, just follow the following steps and you will be able to have a great application with the ZF Design" />
+							<Image id="image0s_1542709096924" width="1800px" src="Images/HowItWorks.svg" height="500px" />
+						
+						</items>
+					</HBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

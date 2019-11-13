@@ -1,0 +1,414 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="Catalog.CatalogZF.controller.TESTforPage" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" xmlns:tnt="sap.tnt" xmlns:unified="sap.ui.unified"
+	xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" displayBlock="true">
+	<App xmlns="sap.m" id="idAppControl">
+		<pages>
+			<Page title="Catalog">
+				<content>
+					<tnt:ToolPage id="toolPage">
+						<tnt:header>
+							<tnt:ToolHeader>
+								<Button id="sideNavigationToggleButton" type="Transparent" press="onSideNavButtonPress" icon="sap-icon://menu2">
+									<layoutData>
+										<OverflowToolbarLayoutData priority="NeverOverflow"/>
+									</layoutData>
+								</Button>
+								<ToolbarSpacer width="20px"/>
+								<Button type="Transparent" text="Back To The LandingPage" press="action"
+									xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+									action:wiring="\{'press':\{'navigation':\{'routeName':'View1'\}\}\}">
+									<layoutData>
+										<OverflowToolbarLayoutData priority="Low"/>
+									</layoutData>
+								</Button>
+								<Button type="Transparent" text="Demo Apps">
+									<layoutData>
+										<OverflowToolbarLayoutData priority="Low"/>
+									</layoutData>
+								</Button>
+								<Button type="Transparent" text="Tipps">
+									<layoutData>
+										<OverflowToolbarLayoutData priority="Low"/>
+									</layoutData>
+								</Button>
+								<tnt:ToolHeaderUtilitySeparator/>
+								<ToolbarSpacer>
+									<layoutData>
+										<OverflowToolbarLayoutData priority="NeverOverflow" minWidth="20px"/>
+									</layoutData>
+								</ToolbarSpacer>
+								<Button type="Transparent" text="Johannes Schwegler" press="handleUserNamePress">
+									<layoutData>
+										<OverflowToolbarLayoutData priority="NeverOverflow"/>
+									</layoutData>
+								</Button>
+							</tnt:ToolHeader>
+						</tnt:header>
+						<tnt:sideContent>
+							<tnt:SideNavigation itemSelect="onItemSelect" expanded="true">
+								<tnt:NavigationList items="{path: '/navigation'}">
+									<tnt:NavigationListItem text="{title}" items="{items}" enabled="{enabled}" icon="{icon}" key="{key}" expanded="{expanded}">
+										<tnt:NavigationListItem text="{title}" enabled="{enabled}" key="{key}"/>
+									</tnt:NavigationListItem>
+								</tnt:NavigationList>
+								<tnt:fixedItem>
+									<tnt:NavigationList items="{path: '/fixedNavigation'}">
+										<tnt:NavigationListItem text="{title}" icon="{icon}"/>
+									</tnt:NavigationList>
+								</tnt:fixedItem>
+							</tnt:SideNavigation>
+						</tnt:sideContent>
+						<tnt:mainContents>
+							<NavContainer id="pageContainer">
+								<pages>
+									<ScrollContainer id="root1" height="100%" vertical="true" horizontal="false">
+										<Panel expandable="true" expanded="false" headerText="ZF Accordion" width="auto" class="sapUiResponsiveMargin">
+											<content>
+												<Text
+													text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"/>
+											</content>
+										</Panel>
+										<Panel expandable="true" expanded="false" width="auto" class="sapUiResponsiveMargin">
+											<headerToolbar>
+												<Toolbar height="3rem" style="Clear">
+													<Title text="Custom Toolbar with a header text"/>
+													<ToolbarSpacer/>
+												</Toolbar>
+											</headerToolbar>
+											<content>
+												<Text
+													text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"/>
+											</content>
+										</Panel>
+										<Panel expandable="true" expanded="false" headerText="Catalog" width="auto" class="sapUiResponsiveMargin">
+											<content>
+												<Text text="This is a Catalog :)"/>
+											</content>
+										</Panel>
+										<Panel expandable="true" expanded="false" headerText="..." width="auto" class="sapUiResponsiveMargin">
+											<content>
+												<Text
+													text="Lorem ipsum dolor st amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"/>
+											</content>
+										</Panel>
+									</ScrollContainer>
+									<ScrollContainer id="root2" height="100%" vertical="true" horizontal="false">
+										<HBox id="hbox0" width="100%" alignItems="Start" justifyContent="End" direction="Column" wrap="Wrap" alignContent="Center">
+											<items>
+												<Button xmlns="sap.m" id="button7" type="Accept" text="Accept"/>
+												<Button xmlns="sap.m" id="button1" type="Back" text="Back"/>
+												<Button xmlns="sap.m" id="button2" text="Default"/>
+												<Button xmlns="sap.m" id="button3" type="Emphasized" text="Emphasized"/>
+												<Button xmlns="sap.m" id="button8" type="Ghost" text="Ghost"/>
+												<Button xmlns="sap.m" id="button6" type="Reject" text="Reject"/>
+												<Button xmlns="sap.m" id="button9" type="Transparent" text="Transparent"/>
+												<Button xmlns="sap.m" id="button10" type="Unstyled" text="Unstyled"/>
+												<Button xmlns="sap.m" id="button11" type="Up" text="Up" icon="sap-icon://account" activeIcon="sap-icon://arrow-down"/>
+												<PagingButton id="button4" count="5"/>
+											</items>
+										</HBox>
+									</ScrollContainer>
+									<ScrollContainer id="Calender" height="100%" vertical="true" horizontal="false">
+										<mvc:XMLView viewName="Catalog.CatalogZF.view.Calendar" type="XML"/>
+									</ScrollContainer>
+									<ScrollContainer id="Field" height="100%" vertical="true" horizontal="false">
+										<HBox id="hboxdField" width="100%" alignItems="Start" alignContent="Start" wrap="Wrap">
+											<items>
+												<CheckBox id="box0" text="Check Box" selected="false"/>
+											</items>
+										</HBox>
+										<HBox id="hbox0_1544179718554" width="100%">
+											<items>
+												<Input id="input0" value="Input Field" width="100%" ariaLabelledBy="__item0-label"/>
+												<InputListItem id="item0" type="Navigation" label="Input List Item">
+													<content></content>
+												</InputListItem>
+												<FeedInput id="input1" placeholder="Hier etwas posten" buttonTooltip="Abschicken"/>
+											</items>
+										</HBox>
+									</ScrollContainer>
+									<ScrollContainer id="Group" height="100%" vertical="true" horizontal="false">
+										<HBox id="hbox3" width="100%">
+											<items>
+												<TextArea xmlns="sap.m" id="area1" value="Lorem ipsum dolor" rows="4"/>
+											</items>
+										</HBox>
+									</ScrollContainer>
+									<ScrollContainer id="List" height="100%" vertical="true" horizontal="false">
+										<HBox id="hboxList" width="100%">
+											<items>
+												<SelectList id="list1"/>
+												<List id="list2" noDataText="Drop list items here">
+													<items>
+														<GroupHeaderListItem id="item9"/>
+														<InputListItem id="item8" type="Navigation" label="Input List Item">
+															<content>
+																<DisplayListItem id="item11" value="Value" type="Navigation" ariaLabelledBy="__item8-label" label="List Item"/>
+																<FeedListItem id="item10" text="Feed List Item text" icon="sap-icon://personnel-view" ariaLabelledBy="__item8-label"
+																	timestamp="Dec 02, 2012" info="Waiting for Approval" sender="John Doe"/>
+																<Input id="inputList" value="input" width="100%" ariaLabelledBy="__item8-label"/>
+																<CustomListItem id="item12" type="Navigation" ariaLabelledBy="__item8-label">
+																	<content>
+																		<Text id="text8" text="sample custom content"/>
+																	</content>
+																</CustomListItem>
+															</content>
+														</InputListItem>
+														<StandardListItem title="List Item 1" id="item3" type="Navigation" description="Description text" icon="sap-icon://picture"/>
+													</items>
+												</List>
+											</items>
+										</HBox>
+									</ScrollContainer>
+									<ScrollContainer id="LoadingAnimation" height="100%" vertical="true" horizontal="false">
+										<HBox id="hbox4" width="100%" alignItems="Center" alignContent="Center" justifyContent="Center">
+											<items>
+												<BusyIndicator id="indicator0" text="Please wait, Theme will be done soon..." size="5rem" busyIndicatorDelay="0" busy="true"/>
+											</items>
+										</HBox>
+									</ScrollContainer>
+									<ScrollContainer id="Menu" height="100%" vertical="true" horizontal="false">
+										<mvc:XMLView viewName="Catalog.CatalogZF.view.Menu" type="XML"/>
+									</ScrollContainer>
+									<ScrollContainer id="MessageBar" height="100%" vertical="true" horizontal="false">
+										<Text text="MessageBar...IN PROGRESS..."/>
+									</ScrollContainer>
+									<ScrollContainer id="Navigation" height="100%" vertical="true" horizontal="false">
+										<l:VerticalLayout class="sapUiContentPadding" width="100%">
+											<l:content>
+												<Breadcrumbs currentLocationText="Laptop">
+													<Link press="onPress" text="Products"/>
+													<Link press="onPress" text="Suppliers"/>
+													<Link press="onPress" text="Titanium"/>
+													<Link press="onPress" text="Ultra portable"/>
+													<Link press="onPress" text="12 inch"/>
+													<Link press="onPress" text="Super portable deluxe"/>
+												</Breadcrumbs>
+											</l:content>
+										</l:VerticalLayout>
+									</ScrollContainer>
+									<ScrollContainer id="PanelStack" height="100%" vertical="true" horizontal="false">
+										<mvc:XMLView viewName="Catalog.CatalogZF.view.PanelStack" type="XML"/>
+									</ScrollContainer>
+									<ScrollContainer id="PopupWindow" height="100%" vertical="true" horizontal="false">
+										<core:Fragment fragmentName="Catalog.CatalogZF.view.Popup" type="XML"/>
+									</ScrollContainer>
+									<ScrollContainer id="Scrollbar" height="100%" vertical="true" horizontal="false">
+										<ScrollContainer height="100%" width="100%" horizontal="true" vertical="true" focusable="true">
+											<Image src="Images/ZF-Logo.svg" densityAware="false" width="80vw"/>
+										</ScrollContainer>
+									</ScrollContainer>
+									<ScrollContainer id="Slider" height="100%" vertical="true" horizontal="false">
+										<l:VerticalLayout class="sapUiContentPadding" width="100%">
+											<Text text="Slider without text field" class="sapUiSmallMarginBottom"/>
+											<Slider value="30" width="90%" class="sapUiSmallMarginBottom"/>
+											<Slider value="27" width="10em" class="sapUiSmallMarginBottom"/>
+											<Slider value="40" width="15em" class="sapUiSmallMarginBottom"/>
+											<Slider value="9" width="77%" min="0" max="10" class="sapUiMediumMarginBottom"/>
+											<Text text="Slider whose value cannot be changed" class="sapUiSmallMarginBottom"/>
+											<Slider value="5" width="66%" min="0" max="50" enabled="false" class="sapUiMediumMarginBottom"/>
+											<Text text="Slider with text field" class="sapUiSmallMarginBottom"/>
+											<Slider value="50" width="100%" min="0" max="100" showAdvancedTooltip="true" showHandleTooltip="false" class="sapUiMediumMarginBottom"/>
+											<Text text="Slider with input field" class="sapUiSmallMarginBottom"/>
+											<Slider value="30" width="100%" min="0" max="200" showAdvancedTooltip="true" showHandleTooltip="false" inputsAsTooltips="true"
+												class="sapUiMediumMarginBottom"/>
+											<Text text="Slider with tickmarks" class="sapUiSmallMarginBottom"/>
+											<Slider enableTickmarks="true" min="0" max="10" class="sapUiMediumMarginBottom" width="100%"/>
+											<Slider enableTickmarks="true" class="sapUiMediumMarginBottom" width="100%"/>
+											<Text text="Slider with tickmarks and step '5'" class="sapUiSmallMarginBottom"/>
+											<Slider enableTickmarks="true" min="-100" max="100" step="5" class="sapUiLargeMarginBottom" width="100%"/>
+											<Text text="Slider with tickmarks and labels" class="sapUiSmallMarginBottom"/>
+											<Slider min="0" max="30" enableTickmarks="true" class="sapUiSmallMarginBottom" width="100%">
+												<ResponsiveScale tickmarksBetweenLabels="3"/>
+											</Slider>
+										</l:VerticalLayout>
+									</ScrollContainer>
+									<ScrollContainer id="Table" height="100%" vertical="true" horizontal="false">
+										<Title width="100%" textAlign="Center" text="Table Title" level="H1" class="sapUiMediumMarginTop"/>
+										<mvc:XMLView viewName="Catalog.CatalogZF.view.Table" typ="XML"/>
+									</ScrollContainer>
+									<ScrollContainer id="TabStrip" height="100%" vertical="true" horizontal="false">
+										<IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}" class="sapUiResponsiveContentPadding">
+											<items>
+												<IconTabFilter text="Info">
+													<Text text="Info content goes here ..."/>
+												</IconTabFilter>
+												<IconTabFilter text="Attachments">
+													<Text text="Attachments go here ..."/>
+												</IconTabFilter>
+												<IconTabFilter text="Notes">
+													<Text text="Notes go here ..."/>
+												</IconTabFilter>
+												<IconTabFilter text="People">
+													<Text text="People content goes here ..."/>
+												</IconTabFilter>
+											</items>
+										</IconTabBar>
+										<l:VerticalLayout class="sapUiContentPadding" width="100%">
+											<l:content>
+												<Label text="No icon(='') used as separator, the separator will be a vertical line."></Label>
+											</l:content>
+										</l:VerticalLayout>
+										<IconTabBar id="idIconTabBarSeparatorNoIcon" expanded="false" class="sapUiResponsiveContentPadding">
+											<items>
+												<IconTabFilter icon="sap-icon://hint" iconColor="Positive">
+													<Text text="Info content goes here ..."/>
+												</IconTabFilter>
+												<IconTabSeparator icon=""/>
+												<IconTabFilter icon="sap-icon://attachment" iconColor="Neutral" count="3">
+													<Text text="Attachments go here ..."/>
+												</IconTabFilter>
+												<IconTabFilter icon="sap-icon://notes" count="12">
+													<Text text="Notes go here ..."/>
+												</IconTabFilter>
+												<IconTabSeparator icon=""/>
+												<IconTabFilter icon="sap-icon://group" iconColor="Negative">
+													<Text text="People content goes here ..."/>
+												</IconTabFilter>
+											</items>
+										</IconTabBar>
+										<l:VerticalLayout class="sapUiContentPadding" width="100%">
+											<l:content>
+												<Label text="Icon used as separator, you are free to choose an icon you want."></Label>
+											</l:content>
+										</l:VerticalLayout>
+										<IconTabBar id="idIconTabBarSeparatorIcon" expanded="false" class="sapUiResponsiveContentPadding">
+											<items>
+												<IconTabFilter icon="sap-icon://hint" iconColor="Neutral">
+													<Text text="Info content goes here ..."/>
+												</IconTabFilter>
+												<IconTabFilter icon="sap-icon://attachment" iconColor="Neutral" count="3">
+													<Text text="Attachments go here ..."/>
+												</IconTabFilter>
+												<IconTabSeparator icon="sap-icon://process"/>
+												<IconTabFilter icon="sap-icon://notes" iconColor="Positive" count="12">
+													<Text text="Notes go here ..."/>
+												</IconTabFilter>
+												<IconTabSeparator icon="sap-icon://process"/>
+												<IconTabFilter icon="sap-icon://group" iconColor="Negative">
+													<Text text="People content goes here ..."/>
+												</IconTabFilter>
+											</items>
+										</IconTabBar>
+										<l:VerticalLayout class="sapUiContentPadding" width="100%">
+											<l:content>
+												<Label text="Different separators used."></Label>
+											</l:content>
+										</l:VerticalLayout>
+										<IconTabBar id="idIconTabBarSeparatorMixed" expanded="false" class="sapUiResponsiveContentPadding">
+											<items>
+												<IconTabFilter icon="sap-icon://hint" iconColor="Critical">
+													<Text text="Info content goes here ..."/>
+												</IconTabFilter>
+												<IconTabSeparator icon=""/>
+												<IconTabFilter icon="sap-icon://attachment" iconColor="Neutral" count="3">
+													<Text text="Attachments go here ..."/>
+												</IconTabFilter>
+												<IconTabSeparator icon="sap-icon://vertical-grip"/>
+												<IconTabFilter icon="sap-icon://notes" iconColor="Positive" count="12">
+													<Text text="Notes go here ..."/>
+												</IconTabFilter>
+												<IconTabSeparator icon="sap-icon://process"/>
+												<IconTabFilter icon="sap-icon://group" iconColor="Negative">
+													<Text text="People content goes here ..."/>
+												</IconTabFilter>
+											</items>
+										</IconTabBar>
+									</ScrollContainer>
+									<ScrollContainer id="Text" height="100%" vertical="true" horizontal="false">
+										<HBox id="hboxText" justifyContent="Center" alignItems="Center" width="100%" direction="Column" alignContent="Center">
+											<items>
+												<TextArea xmlns="sap.m" id="area0" value="Hier können Sie ihren Text eintragen" rows="4"/>
+												<core:InvisibleText id="text2" text="InvisibleText"/>
+												<Label id="label0" width="100%" text="Das ist ein aktives Label" design="Bold"/>
+												<Label id="label2" width="100%" text="Das ist ein ausgelastetes Label" busy="true"/>
+												<Label id="label3" width="100%" text="Dies ist ein benötigtes Label" required="true"/>
+												<Label id="label1" width="100%" text="Das ist ein blockiertes Label"/>
+												<Title level="H1" text="Header level 1"/>
+												<Title level="H2" text="Header level 2"/>
+												<Title level="H3" text="Header level 3"/>
+												<core:InvisibleText id="text1" text="InvisibleText"/>
+												<Text xmlns="sap.m" id="text0" text="Text"/>
+											</items>
+										</HBox>
+									</ScrollContainer>
+									<ScrollContainer id="Toolbar" height="100%" vertical="true" horizontal="false">
+										<Title width="100%" textAlign="Center" text="Header Toolbar" level="H1" class="sapUiLargeMarginTop"/>
+										<HBox id="hbox" width="100%" justifyContent="Center">
+											<items>
+												<Toolbar id="toolbar1" width="100%">
+													<content>
+														<Button id="button0" text="Button"/>
+														<ToolbarSpacer id="spacer2_1544520557771"/>
+														<Label id="label343" width="100%" text="Label"/>
+														<ToolbarSpacer id="spacer4"/>
+														<ComboBox id="box034">
+															<items>
+																<core:Item id="item340" text="Item 1 Text" key="item-1-key"/>
+																<core:Item id="item31" text="Item 2 Text" key="item-2-key"/>
+															</items>
+														</ComboBox>
+														<ToolbarSpacer id="spacer3"/>
+														<Link id="link0" text="Link Text" href="https://ui5.sap.com"/>
+														<ToolbarSpacer id="spacer2"/>
+														<Button id="button341" text="Button"/>
+													</content>
+												</Toolbar>
+											</items>
+										</HBox>
+										<Title width="100%" textAlign="Center" text="Standard Toolbar" level="H1" class="sapUiLargeMarginTop"/>
+										<HBox id="hbox12" width="100%" justifyContent="Center">
+											<items>
+												<Toolbar id="toolbar21" width="100%">
+													<content>
+														<Button id="button20" text="Button"/>
+														<ToolbarSpacer id="spacer2_12544520557771"/>
+														<Label id="label3423" width="100%" text="Label"/>
+														<ToolbarSpacer id="spacer14"/>
+														<ComboBox id="box0324">
+															<items>
+																<core:Item id="ite2m340" text="Item 1 Text" key="item-1-key"/>
+																<core:Item id="it2em31" text="Item 2 Text" key="item-2-key"/>
+															</items>
+														</ComboBox>
+														<ToolbarSpacer id="spacer32"/>
+														<Link id="link03" text="Link Text" href="https://ui5.sap.com"/>
+														<ToolbarSpacer id="spacer23"/>
+														<Button id="button3341" text="Button"/>
+													</content>
+												</Toolbar>
+											</items>
+										</HBox>
+										<Title width="100%" textAlign="Center" text="Footer Toolbar" level="H1" class="sapUiLargeMarginTop"/>
+										<HBox id="hbo1x" width="100%" justifyContent="Center">
+											<items>
+												<Toolbar id="toolbar221" width="100%">
+													<content>
+														<Button id="but2ton20" text="Button"/>
+														<ToolbarSpacer id="spacer22_1544520557771"/>
+														<Label id="label34223" width="100%" text="Label"/>
+														<ToolbarSpacer id="spacer423"/>
+														<ComboBox id="box0342">
+															<items>
+																<core:Item id="item3420" text="Item 1 Text" key="item-1-key"/>
+																<core:Item id="item321" text="Item 2 Text" key="item-2-key"/>
+															</items>
+														</ComboBox>
+														<ToolbarSpacer id="spacer33"/>
+														<Link id="link40" text="Link Text" href="https://ui5.sap.com"/>
+														<ToolbarSpacer id="spacer42"/>
+														<Button id="button3541" text="Button"/>
+													</content>
+												</Toolbar>
+											</items>
+										</HBox>
+									</ScrollContainer>
+								</pages>
+							</NavContainer>
+						</tnt:mainContents>
+					</tnt:ToolPage>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

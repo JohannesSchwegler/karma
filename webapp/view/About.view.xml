@@ -1,0 +1,16 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="Catalog.CatalogZF.controller.About">
+	<App xmlns="sap.m">
+		<pages>
+			<Page title="About">
+				<content>
+				    <HBox width="100%" id="hbox0">
+				        <items>
+				            <Button xmlns="sap.m" xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="button0" text="Go Back To The LP" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'View1'\}\}\}"/>
+				          
+				        </items>
+				    </HBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

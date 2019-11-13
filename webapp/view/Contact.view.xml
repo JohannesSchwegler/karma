@@ -1,0 +1,20 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="Catalog.CatalogZF.controller.Contact">
+	<App xmlns="sap.m">
+		<pages>
+			<Page title="Contact" backgroundDesign="Transparent">
+				<content>
+				    <Button xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" id="button0" text="Go Back To The LandingPage" press="action" action:wiring="\{'press':\{'navigation':\{'routeName':'View1'\}\}\}"/>
+				    <Button xmlns="sap.m" text="Button" id="button0_1557250012132"/>
+				    <UploadCollection noDataText="Keine Dateien gefunden." noDataDescription="Dateien für Upload hierher ziehen oder Taste &quot;+&quot; verwenden." id="collection0">
+				        <items>
+				            <UploadCollectionItem contributor="Contributor1" fileName="fileName1" uploadedDate="Tue May 07 2019" id="item0"/>
+				            <UploadCollectionItem contributor="Contributor1" fileName="fileName2" uploadedDate="Tue May 07 2019" id="item1"/>
+				            <UploadCollectionItem contributor="Contributor1" fileName="fileName3" uploadedDate="Tue May 07 2019" id="item2"/></items>
+				    </UploadCollection>
+				    <Image src="Images/About.svg" width="100%" height="100%" id="image0"/>
+				</content>
+				
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
