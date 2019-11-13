@@ -11,7 +11,10 @@ pipeline {
     stage('Package and Install') {
       steps {
          bat 'npm install -g grunt-cli'
-         bat' npm install grunt'
+         bat 'npm install -g karma-cli'
+         bat 'npm install --save-dev karma karma-ui5'
+         bat'npm install --save-dev karma-chrome-launcher'
+         bat' npm install'
       }
     }
     
