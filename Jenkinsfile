@@ -10,14 +10,24 @@ pipeline {
     
     stage('Package and Install') {
       steps {
+         bat 'npm config set @sap:registry https://npm.sap.com'
+         bat 'npm install --save-dev @sap/grunt-sapui5-bestpractice-build'
          bat 'npm install -g grunt-cli'
+         bat' npm install grunt'
+         bat 'npm install grunt-contrib-clean --save-dev'
          bat 'npm install -g karma-cli'
-         bat 'npm install --save-dev karma karma-ui5'
          bat'npm install --save-dev karma-chrome-launcher'
-         bat' npm install'
+         bat 'npm install --save-dev karma'
+         bat 'npm install --save-dev karma-ui5'
+        
+
       }
     }
-    
+        stage('Test') {
+      steps {
+         bat'karma start'
+      }
+    }
     stage('Build') {
       steps {
          bat'grunt'
