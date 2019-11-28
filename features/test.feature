@@ -1,5 +1,6 @@
 Feature: User Navigation
-Als Nutzer der Webseite möchte ich ein Menü zur Verfügung haben, damit ich mich durch die Anwendung navigieren kann.
+Als Nutzer der Webseite möchte ich ein Menü zur Verfügung haben, 
+damit ich mich durch die Anwendung navigieren kann.
  
   Scenario: Check for page
     Given I`m in my browser
