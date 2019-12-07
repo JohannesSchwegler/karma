@@ -15,7 +15,7 @@
 					</sap.m:HBox>
 					<sap.m:VBox xmlns:sap.m="sap.m" id="HBox2" height="79.5%" width="100%" alignItems="Start" backgroundDesign="Solid" renderType="Bare" direction="Column">
 						<sap.m:items>
-							<Text class="Styleguide" text="SAP UI5 Test Application"/>
+							<Text class="Styleguide" text="SAP UI5 Test Application Hummler"/>
 							<Text class="Information" text="This Application will be deloyed with Jenkins"/>
 							<sap.m:Image class="Illustration" height="500px" width="1200px" src="Images/Illustration.svg"/>
 							<Button xmlns:action="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" class="Elements" width="15em" text="Elements" press="action" icon="sap-icon://inspection" action:wiring="\{'press':\{'navigation':\{'routeName':'TESTforPage'\}\}\}"/>
