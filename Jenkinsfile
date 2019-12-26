@@ -37,7 +37,7 @@ pipeline {
     stage('Deloy') {
       steps {
       dir("${env.WORKSPACE}/dist"){
-       jar -cvf my_web_app.war *
+       bat 'jar -cvf my_web_app.war *'
        }
       deploy adapters: [tomcat9(credentialsId: '559d1539-ff3e-4079-917d-2e095ec8699f', path: '', url: 'http://localhost:8081/')], contextPath: 'sample', war: '**/*.war'
       }
