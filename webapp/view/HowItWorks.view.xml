@@ -1,7 +1,7 @@
 <mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" controllerName="Catalog.CatalogZF.controller.HowItWorks" xmlns:core="sap.ui.core">
 	<App xmlns="sap.m">
 		<pages>
-			<Page title="Title">
+			<Page title="How it works">
 				<content>
 					<HBox id="hbox0" justifyContent="Center" alignItems="Center" width="100%" direction="Column">
 						<items>
